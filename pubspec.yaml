@@ -41,6 +41,7 @@ dependencies:
   cloud_firestore: ^4.12.2
   intl: ^0.18.1
   syncfusion_flutter_calendar: ^23.1.43
+  tflite_flutter: ^0.10.3
 
 dev_dependencies:
   flutter_test:

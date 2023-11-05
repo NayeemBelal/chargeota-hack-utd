@@ -13,10 +13,10 @@ Future<void> main() async {
       projectId: "chargeota",
     ),
   );
-  runApp(MyApp());
+  runApp(CalendarScreen());
 }
 
-class MyApp extends StatelessWidget {
+class CalendarScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
