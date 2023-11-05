@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import '../auth_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import '/home_screen.dart';
+import '../../calendar_screen.dart';
+import 'package:chargeota/main.dart';
 
 class SignUpScreen extends StatefulWidget {
   @override
@@ -71,7 +72,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
         // Navigate to the home screen upon successful sign-up
         // Replace 'HomeScreen()' with your actual home screen widget
         Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => HomeScreen()));
+            MaterialPageRoute(builder: (context) => LandingPage()));
       } on FirebaseAuthException catch (e) {
         // Handle the Firebase auth error here
         // Implement your error handling logic here
