@@ -12,7 +12,16 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+
   percent_indicator: ^3.0.1
+
+  firebase_core: ^2.21.0
+  firebase_auth: ^4.12.1
+  firebase_ui_auth: ^1.9.1
+  cloud_firestore: ^4.12.2
+  intl: ^0.18.1
+  syncfusion_flutter_calendar: ^23.1.43
+
 
 dev_dependencies:
   flutter_test:
