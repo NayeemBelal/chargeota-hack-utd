@@ -3,6 +3,7 @@ import '../auth_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../sign_up/sign_up_screen.dart';
 import 'package:chargeota/main.dart';
+import 'package:chargeota/calendar_screen.dart';
 
 // Replace HomeScreen with the actual screen you want to navigate after successful sign-in
 import 'package:chargeota/calendar_screen.dart'; // This should be the path to your HomeScreen
@@ -79,7 +80,7 @@ class _SignInScreenState extends State<SignInScreen> {
         // If sign-in is successful, navigate to the HomeScreen
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => LandingPage()),
+          MaterialPageRoute(builder: (context) => CalendarScreen()),
         );
       } on FirebaseAuthException catch (e) {
         // If there is an error, show the error message in a Snackbar
