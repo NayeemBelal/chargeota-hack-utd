@@ -114,11 +114,12 @@ class CarDropDownState extends State<CarDropDown> {
       icon: null,
       iconEnabledColor: Colors.white,
       underline: SizedBox(),
-      style: const TextStyle(
-          color: Colors.black,
-          letterSpacing: 3,
-          fontSize: 25,
-          fontWeight: FontWeight.w500),
+      style: TextStyle(
+          color: Colors.grey[800],
+          fontWeight: FontWeight.w900,
+          fontFamily: 'Open Sans',
+          letterSpacing: 2,
+          fontSize: 30),
       dropdownColor: Colors.white,
     );
   }
