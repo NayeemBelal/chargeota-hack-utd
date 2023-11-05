@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "145895879153",
+    "project_id": "chargeota",
+    "storage_bucket": "chargeota.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:145895879153:android:efd28ef5c95418bb859450",
+        "android_client_info": {
+          "package_name": "com.example.chargeota"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd4npuGJ0J9ZfGXk5CDkiJY9PjbTzNnQs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
