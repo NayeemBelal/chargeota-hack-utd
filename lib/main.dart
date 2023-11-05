@@ -1,8 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
 import '../Authentication/sign_in/sign_in_screen.dart';
-import '/home_screen.dart'; // Update this path to where your home screen is located
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    // Replace with actual values
+    options: const FirebaseOptions(
+      apiKey: "AIzaSyAd4npuGJ0J9ZfGXk5CDkiJY9PjbTzNnQs",
+      appId: "1:145895879153:android:efd28ef5c95418bb859450",
+      messagingSenderId: "145895879153",
+      projectId: "chargeota",
+    ),
+  );
   runApp(MyApp());
 }
 
@@ -15,14 +25,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      // Set the initial route or home page of the app
-      home: SignInScreen(), // Replace with your sign-in screen widget
-      // If using named routes, define them here
-      routes: {
-        '/signin': (context) => SignInScreen(),
-        '/home': (context) => HomeScreen(),
-        // Add more routes as needed
-      },
+      home: SignInScreen(), // Your sign-in screen widget should be here
     );
   }
 }
